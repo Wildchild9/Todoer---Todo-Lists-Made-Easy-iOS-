@@ -11,7 +11,7 @@ import RealmSwift
 import ChameleonFramework
 import SwipeCellKit
 
-class CategoriesViewController: UITableViewController, SwipeTableViewCellDelegate {
+class TodoItemViewController: UITableViewController, SwipeTableViewCellDelegate {
     
     // MARK: - Class Variables & Values
     
