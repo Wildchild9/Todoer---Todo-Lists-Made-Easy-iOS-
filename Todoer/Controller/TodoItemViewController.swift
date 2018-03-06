@@ -14,14 +14,17 @@ import SwipeCellKit
 class TodoItemViewController: UITableViewController, SwipeTableViewCellDelegate {
     
     // MARK: - Class Variables & Values
+  
+    var todoItems: Results<Item>?
+    let realm = try! Realm()
+
     
     
     
     
     
     
-    
-    // MARK: - View Methods
+// MARK: - View Methods
     
     // TODO: - viewDidLoad
     override func viewDidLoad() {
@@ -36,7 +39,7 @@ class TodoItemViewController: UITableViewController, SwipeTableViewCellDelegate 
     
     
     
-    // MARK: - TableView Datasource Methods
+// MARK: - TableView Datasource Methods
     
     //TODO: - Number of Sections
     override func numberOfSections(in tableView: UITableView) -> Int {
@@ -52,11 +55,13 @@ class TodoItemViewController: UITableViewController, SwipeTableViewCellDelegate 
     
     // TODO: - Cell for Row at indexPath
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath) as! SwipeTableViewCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath) as! SwipeTableViewCell
         
         // Configure the cell...
         
         cell.delegate = self
+        
+        cell.textLabel?.font = UIFont(name: "HelveticaNeue-Light", size: 19)
         
         return cell
     }
@@ -74,10 +79,18 @@ class TodoItemViewController: UITableViewController, SwipeTableViewCellDelegate 
     
     
     
-    //MARK: - Swipe Cell Delegate Methods
+//MARK: - Swipe Cell Delegate Methods
     
     // TODO: - Edit Actions for Row at indexPath
     func tableView(_ tableView: UITableView, editActionsForRowAt indexPath: IndexPath, for orientation: SwipeActionsOrientation) -> [SwipeAction]? {
+        // Right Orientation
+        if orientation == .right {
+          //  let deleteAction = SwipteAction
+            
+        }
+        
+        
+        
         
         // Configure actions for swipe cell
         

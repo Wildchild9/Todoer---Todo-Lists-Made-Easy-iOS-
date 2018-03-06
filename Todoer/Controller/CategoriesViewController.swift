@@ -15,7 +15,9 @@ class CategoriesViewController: UITableViewController, SwipeTableViewCellDelegat
     
 // MARK: - Class Variables & Values
     
-    
+    var categories: Results<Category>?
+  
+    let realm = try! Realm()
     
     
     

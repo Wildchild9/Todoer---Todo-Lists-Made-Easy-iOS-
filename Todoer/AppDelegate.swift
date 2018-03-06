@@ -43,10 +43,4 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
 
-extension URL {
-    func asString() -> String {
-        var url = "\(self)"
-        url.removeFirst(7)
-        return url
-    }
-}
+
