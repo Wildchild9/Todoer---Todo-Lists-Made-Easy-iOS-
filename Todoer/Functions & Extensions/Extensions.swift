@@ -17,7 +17,8 @@ import SwipeCellKit
     extension UIColor {
         struct myColours {
             
-            static let deleteRed = #colorLiteral(red: 0.9914426208, green: 0.2377755642, blue: 0.1868577898, alpha: 1) //Background for delete swipe button
+            static let deleteRed = #colorLiteral(red: 0.9914426208, green: 0.2377755642, blue: 0.1868577898, alpha: 1) // Background for delete swipe button
+            static let renameYellow = #colorLiteral(red: 1, green: 0.8319068551, blue: 0, alpha: 1) // Background colour for rename swipe button
             static let todoBlue = #colorLiteral(red: 0, green: 0.5898008943, blue: 1, alpha: 1) // Theme Colour
             static let backBlue = UIColor.myColours.todoBlue.darken(byPercentage: 0.3) // Background colour for CategoryViewController
             static let contrastLight = UIColor.flatWhite
@@ -58,9 +59,19 @@ extension UIColor {
         return newColour
     }
     
-        
-    
-    
+}
+
+
+
+
+
+//_____________________________________________
+//MARK: - Number of Rows in TableView
+
+extension UITableView {
+    func numberOfRows() -> Int {
+        return numberOfRowsInTableView(in: self)
+    }
 }
 
 
@@ -70,13 +81,6 @@ extension UIColor {
 //_____________________________________________
 //MARK: - Empty Mark
 
-
-
-
-
-
-//_____________________________________________
-//MARK: - Empty Mark
 
 
 

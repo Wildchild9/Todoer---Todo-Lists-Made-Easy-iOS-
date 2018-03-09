@@ -85,7 +85,8 @@ class TodoItemViewController: UITableViewController, SwipeTableViewCellDelegate 
     func tableView(_ tableView: UITableView, editActionsForRowAt indexPath: IndexPath, for orientation: SwipeActionsOrientation) -> [SwipeAction]? {
         // Right Orientation
         if orientation == .right {
-          //  let deleteAction = SwipteAction
+            
+            
             
         }
         
