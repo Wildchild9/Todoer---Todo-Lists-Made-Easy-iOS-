@@ -114,10 +114,9 @@ class CategoriesViewController: UITableViewController, SwipeTableViewCellDelegat
         } else {
             
             let renameAction = SwipeAction(style: .default, title: "Rename") { (action, indexPath) in
-                
                 self.renameAlert(indexPath: indexPath)
-                
             }
+            
             
             renameAction.backgroundColor = UIColor.myColours.renameYellow
             renameAction.image = UIImage(named: "rename-icon1-small-white")

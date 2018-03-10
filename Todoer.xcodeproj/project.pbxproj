@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		36C292E955CEAA97E88715BC /* Pods_Todoer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E7C2A2818B63DD9B454B537 /* Pods_Todoer.framework */; };
+		C2233682205491E800D372CD /* Singletons.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2233681205491E800D372CD /* Singletons.swift */; };
 		C232F88C204AF0ED000FE068 /* TodoItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C232F88B204AF0ED000FE068 /* TodoItemViewController.swift */; };
 		C232F88E204AF123000FE068 /* CategoriesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C232F88D204AF123000FE068 /* CategoriesViewController.swift */; };
 		C232F890204B11CB000FE068 /* Functions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C232F88F204B11CB000FE068 /* Functions.swift */; };
@@ -24,6 +25,7 @@
 		0B624F6876415E6D17A8E1F0 /* Pods-Todoer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Todoer.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Todoer/Pods-Todoer.debug.xcconfig"; sourceTree = "<group>"; };
 		354ADC5B861F5F9AFCFC7F92 /* Pods-Todoer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Todoer.release.xcconfig"; path = "Pods/Target Support Files/Pods-Todoer/Pods-Todoer.release.xcconfig"; sourceTree = "<group>"; };
 		4E7C2A2818B63DD9B454B537 /* Pods_Todoer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Todoer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C2233681205491E800D372CD /* Singletons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Singletons.swift; sourceTree = "<group>"; };
 		C232F88B204AF0ED000FE068 /* TodoItemViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoItemViewController.swift; sourceTree = "<group>"; };
 		C232F88D204AF123000FE068 /* CategoriesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesViewController.swift; sourceTree = "<group>"; };
 		C232F88F204B11CB000FE068 /* Functions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Functions.swift; sourceTree = "<group>"; };
@@ -65,6 +67,14 @@
 				354ADC5B861F5F9AFCFC7F92 /* Pods-Todoer.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		C2233680205491DB00D372CD /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				C2233681205491E800D372CD /* Singletons.swift */,
+			);
+			path = Classes;
 			sourceTree = "<group>";
 		};
 		C2B020E1204C7352003A04A3 /* Functions & Extensions */ = {
@@ -135,6 +145,7 @@
 			children = (
 				C2E003C92049989B00F797CE /* AppDelegate.swift */,
 				C2C7627A20499E020004241F /* Controller */,
+				C2233680205491DB00D372CD /* Classes */,
 				C2B020E1204C7352003A04A3 /* Functions & Extensions */,
 				C2C7627920499DFF0004241F /* Model */,
 				C2C7627820499DFC0004241F /* View */,
@@ -279,6 +290,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C2E003CA2049989B00F797CE /* AppDelegate.swift in Sources */,
+				C2233682205491E800D372CD /* Singletons.swift in Sources */,
 				C2B020DE204C708C003A04A3 /* Category.swift in Sources */,
 				C232F88C204AF0ED000FE068 /* TodoItemViewController.swift in Sources */,
 				C232F88E204AF123000FE068 /* CategoriesViewController.swift in Sources */,
